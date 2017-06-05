@@ -11,5 +11,6 @@ class emacs::dependencies {
   package { 'libotf-dev': ensure => installed }
   package { 'libdbus-1-dev': ensure => installed }
   package { 'libgconf2-dev': ensure => installed }
+  package { 'libncurses-dev': ensure => installed }
 
 }
