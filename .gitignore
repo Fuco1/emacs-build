@@ -1,5 +1,8 @@
-/emacs-25.2/*
-/.bundle
-/.vagrant
-/vendor
 *.log
+/.bundle
+/.librarian/
+/.tmp/
+/.vagrant
+/emacs-25.2/*
+/modules/stdlib
+/vendor
