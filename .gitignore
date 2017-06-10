@@ -1,8 +1,4 @@
 *.log
-/.bundle
-/.librarian/
 /.tmp/
 /.vagrant
 /emacs-25.2/*
-/modules/stdlib
-/vendor
