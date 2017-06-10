@@ -1,6 +1,18 @@
 #!/bin/bash
 set -e
 
+BUILD_ENV="$1"
+if [ -z "$BUILD_ENV" ]; then
+    BUILD_ENV='vagrant'
+fi
+
+if [ "$BUILD_ENV" = 'vagrant' ]; then
+    vagrant up --provision
+    vagrant ssh -c "cd /vagrant && bash build.sh host"
+    vagrant halt
+    exit 0
+fi
+
 VERSION=$(cat "$PWD/VERSION")
 
 if [ ! -d "$PWD/emacs-$VERSION" ]; then
