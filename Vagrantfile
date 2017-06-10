@@ -12,12 +12,7 @@ Vagrant.configure("2") do |config|
       v.cpus = 2
     end
 
-    eb.vm.provision :shell, path: "vagrant/puppet.sh"
-
-    eb.vm.provision "puppet" do |puppet|
-      puppet.manifests_path = "."
-      puppet.manifest_file = "default.pp"
-    end
+    eb.vm.provision :shell, path: "vagrant/provision.sh"
   end
 
 end
