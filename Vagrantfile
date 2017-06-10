@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
       v.cpus = 2
     end
 
-    eb.vm.provision :shell, path: "vagrant/provision.sh"
+    eb.vm.provision :shell, path: "provision.sh"
   end
 
 end
