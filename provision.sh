@@ -19,7 +19,7 @@ apt-get --yes install \
         librsvg2-dev \
         libtiff-dev \
         libxml2-dev \
-        libxft-dev
+        libxft-dev \
         libxpm-dev \
         m17n-db \
         m17n-lib-bin \
