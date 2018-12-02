@@ -8,7 +8,7 @@ fi
 
 if [ "$BUILD_ENV" = 'vagrant' ]; then
     vagrant up --provision
-    vagrant ssh -c "cd /vagrant && bash build.sh host"
+    vagrant ssh -c "cd /vagrant && bash build host"
     vagrant halt
     exit 0
 fi
