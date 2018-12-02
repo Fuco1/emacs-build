@@ -1,4 +1,4 @@
 *.log
 /.tmp/
 /.vagrant
-/emacs-25.2/*
+/emacs-*/*
