@@ -11,6 +11,7 @@ apt-get --yes install \
         libgconf2-dev \
         libgif-dev \
         libgpm-dev \
+        libgnutls-dev \
         libjpeg-dev \
         libm17n-dev \
         libmagickwand-dev \
